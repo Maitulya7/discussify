@@ -1,8 +1,11 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretUp } from '@fortawesome/free-solid-svg-icons';
+import FeedbackItem from '@/components/FeedbackItem';
 
 export default function Home() {
   return (
     <>
-      <main className="bg-white md:max-w-2xl mx-auto md:shadow-lg md:rounded-lg md:mt-8 overflow-hidden">
+      <main className="bg-white md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto md:shadow-lg md:rounded-lg md:mt-8 overflow-hidden">
         <div className="bg-gradient-to-r from-cyan-400 to-blue-400 p-8">
           <h1 className="font-bold text-xl">
             Coding with Maitulya
@@ -11,17 +14,18 @@ export default function Home() {
             how to improve my react skills and my front end design skills
           </p>
         </div>
-        <div className="px-8 py-2 bg-gray-100 flex border-b">
+        <div className="px-8 py-4 bg-gray-100 flex border-b">
           <div className="grow"></div>
-          <button className="bg-blue-500 text-white px-2 py-1 rounded-md">
+          <button className="bg-blue-500 text-white px-2 py-1 rounded">
             Make A Suggestion
           </button>
         </div>
-        <div className="px-8 py-4">
-          <div>
-            <h1>Improve JS</h1>
-            <p className="text-gray-600 text-sm">If you want to be front end developer javascript is most important out of all of focus more on improving you javascript basic and then move to more robust framework like react and understand react components</p>
-          </div>
+        <div className="px-8">
+          <FeedbackItem />
+          <FeedbackItem />
+          <FeedbackItem />
+          <FeedbackItem />
+          <FeedbackItem />
         </div>
       </main>
     </>
